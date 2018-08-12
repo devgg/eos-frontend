@@ -23,11 +23,8 @@ function start(keyProvider, accounts, tables, actions) {
   server.start(actions);
 }
 
-Table = communication.Table;
-
-module.exports = {
-  start,
-  Table,
-  Argument,
-  Action
-};
+module.exports.start = start;
+module.exports.execute = communication.execute;
+module.exports.Table = communication.Table;
+module.exports.Argument = Argument;
+module.exports.Action = Action;
