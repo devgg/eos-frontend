@@ -2,10 +2,8 @@ const Eos = require("eosjs");
 
 const v = {};
 
-function init(keyProvider, accounts, tables) {
-  v.eos = Eos({
-    keyProvider: keyProvider
-  });
+function init(eosOptions, accounts, tables) {
+  v.eos = Eos(eosOptions);
   v.accounts = accounts;
   v.tables = tables;
 }

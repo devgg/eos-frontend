@@ -18,8 +18,8 @@ class Action {
   }
 }
 
-function start(keyProvider, accounts, tables, actions) {
-  communication.init(keyProvider, accounts, tables);
+function start(eosOptions, accounts, tables, actions) {
+  communication.init(eosOptions, accounts, tables);
   server.start(actions);
 }
 
